@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <div class="container" id="home">
+        <div class="nav-bar">
+                    <h1 class="title">Sli<span>Mex</span></h1>
+                    <p>Green Coffee</p>
+                <ul class="menu">
+                    <li><a href="#home">Home </a></li>
+                    <li><a href="#products">Product</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+        </div>
+    </div>
+        <ul class="sci" id="home">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class="home" id="home">
+        <h1 class="new-title">Good <span>Coffee</span>will always <br>Find the audience</h1>
+        <p>Slimex Green Coffee is a natural weight loss supplement <br> that helps boost your metabolism and increase fat burning. <br> Try it now and achieve your weight loss goals!</p>
+        <button type="submit" onclick="openpopup()">SHOP NOW</button>        
+  </div>
+
+  
+        <!--Let a function by saying Onclick open popup -->
+        <div class="popup" id="popup">
+            <form autocomplete="off" id="form">
+                <h2>Ensure to fill in your details</h2>
+                <input type="text" name="name" placeholder="Product Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="tel" placeholder="Phone" required>
+                <input type="number" name="Quantity" placeholder="Quantity" required>
+                <input class="btn" type="submit" onclick="closepopup()" value="submit" placeholder="Name">
+            </form>
+        </div>
+
+
+<br>
+<br><br><br>
+  <div class="products" id="products">
+    <h3>Our Product</h3>
+    <div class="all-product">
+        <div class="product">
+            <img src="./small 1.png" alt="">
+            <div class="product-info">
+                <h4 class="product-title">Green coffee
+                </h4>
+                <p class="product-price">#3,000</p>
+                <a class="product-btn" href="#">Buy Now</a>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <img src="./small 2.png" alt="">
+            <div class="product-info">
+                <h4 class="product-title">cream
+                </h4>
+                <p class="product-price">#4,000</p>
+                <a class="product-btn" href="#">Buy Now</a>
+            </div>
+
+        </div>
+
+        <div class="product">
+            <img src="./small 3.png" alt="">
+            <div class="product-info">
+                <h4 class="product-title">coffee
+                </h4>
+                <p class="product-price">#2,000</p>
+                <a class="product-btn" href="#">Buy Now</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+       <br>
+       <br>
+       <br>
+       <br>
+        <br>
+        <br>
+        <br>
+       <footer>
+        <div class="footercontainer" id="contact">
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-google-plus"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+
+
+            <div class="footernav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Product</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom" id="contact">
+            <p>copyright &copy;2023; <span class="design">Mateo</span></p><br>
+            <p><a href="majhayofficial@gmail.com">Majhayofficial@gmail.com</a></p>
+        </div>  
+       </footer>
+
+
+
+
+    <!-- Let defined the two functions -->
+    <script>
+        let popup = document.getElementById("popup");
+    
+        // Let defined the function for open
+        function openpopup(){
+            popup.classList.add("open-popup");
+        }
+    
+        // Let defined the function for close
+        function closepopup(){
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+
+            
+</body>
+</html>
